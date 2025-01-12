@@ -1,0 +1,35 @@
+**How to use!**
+
+__Non_Executable Versions__:
+1. Install and configure the latest version of python:
+    Tutorial : 
+        Windows: https://www.youtube.com/watch?v=m9I-YpOjXVQ 
+        (Credit Geeky Script)
+
+        Mac : https://www.youtube.com/watch?v=nhv82tvFfkM
+        (Credit Programming knowledge)
+
+2. Create a folder to store the files on your desktop
+
+3. Download the versions of the script you wish to use and Main.py this serves as a tool to automatically install dependenices and select the version to execute
+
+4. Create a folder within the first folder called 'cache' and add the contents of this 'cache2' folder in the repo to it
+
+5. Open the Command prompt and navigate to the folder:
+    E.G. : cd Desktop/folderName
+
+6. With python installed type the command "python Main.py"
+
+7. Select the version you wish to use
+
+__Creating the executable__:
+1. Do step 1 of the Non_Executable Version if python isn't already installed
+
+2. Install Pyinstaller with the following pip command:
+     pip install pyinstaller
+
+3. With the Wordle_UI_Ver1.0.1.py file downloaded along with step 4 of the first tutorial being completed
+    and being in the folder where it is stored within the cmd prompt type the following:
+      pyinstaller Wordle_UI_Ver1.0.1.py --onefile --noconsole --add-data cache:cache
+
+4. This will make 2 folders within the working directory, the dist folder contains the executable version of the program
